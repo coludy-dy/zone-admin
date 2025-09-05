@@ -49,7 +49,7 @@
                     <!-- Description -->
                     <div class="mb-3">
                         <label class="form-label">Description <span class="text-danger">*</span></label>
-                        <textarea name="description" class="form-control" rows="4" placeholder="Enter product description" required>{{ $product? $product->description : '' }}</textarea>
+                        <textarea name="description" class="form-control" rows="7" placeholder="Enter product description" required>{{ $product? $product->description : '' }}</textarea>
                     </div>
 
                     <!-- Camera & Battery -->

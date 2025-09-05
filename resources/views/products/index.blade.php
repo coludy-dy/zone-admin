@@ -94,7 +94,7 @@
                                 <img src="{{ asset($product->img_path) }}" alt="Product Image" class="rounded" width="50">
                             </td>
                             <td>{{ $product->stock }}</td>
-                            <td>{{ number_format($product->price) }}</td>
+                            <td>{{ number_format($product->price) }}MMK</td>
                             <td>{{ $product->storage }}</td>
                             <td>
                                 <span class="badge bg-{{ $product->status == 'available' ? 'success' : 'secondary' }}">
