@@ -115,7 +115,7 @@
                             <label for="name" class="form-label"><b>:</b></label>
                         </div>
                         <div class="col-md-6">
-                            <label for="name" class="form-label">{{ $product->price}}</label>
+                            <label for="name" class="form-label">{{ $product->price}}MMK</label>
                         </div>
                     </div>
                     <div class="row mb-2">

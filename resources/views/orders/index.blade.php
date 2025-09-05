@@ -89,9 +89,9 @@
                     @forelse ($orders as $key => $order)
                         <tr>
                             <td>{{ $orders->firstItem() + $key }}</td>
-                            <td>{{ $order->user->name }}</td>
-                            <td>{{ $order->admin->name }}</td>
-                            <td>${{ number_format($order->total_amount, 2) }}</td>
+                            <td>{{ optional($order->user)->name?? '' }}</td>
+                            <td>{{ $order->admin->name?? '' }}</td>
+                            <td>{{ number_format($order->total_amount, 2) }}MMK</td>
                             <td>
                                 @php
                                     $badgeClass = match($order->status) {
